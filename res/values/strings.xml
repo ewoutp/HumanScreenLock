@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Human Screen Lock</string>
+    <string name="infoText">This app will monitor your movements. 
+        \nAs long as a human is holding the device, the screen stays on. 
+        As soon as no movement is detected, the screen will turn off.
+        \nMore visually&#8230; the black line must stay above the dashed red line.
+        </string>
+    <string name="notLockOnContentTitle">Human Screen Lock On</string>
+    <string name="notLockOnContentText">Keep moving to keep the screen locked</string>
+    <string name="action_settings">Settings</string>
+    <string name="show_notifications_title">Show notifications</string>
+
+</resources>
