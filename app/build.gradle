@@ -1,0 +1,24 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.ewoutp.humanscreenlock"
+        minSdkVersion 10
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            runProguard true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:20.+'
+    compile 'com.android.support:appcompat-v7:19.+'
+}

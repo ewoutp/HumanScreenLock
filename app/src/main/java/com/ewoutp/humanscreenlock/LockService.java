@@ -91,7 +91,7 @@ public class LockService extends Service implements SensorEventListener, OnShare
 	 */
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-		if (intent.getStringExtra("action") == Intent.ACTION_SCREEN_OFF) {
+		if ((intent != null) && (intent.getStringExtra("action") == Intent.ACTION_SCREEN_OFF)) {
 			// Screen is turned on, release lock and stop listening
 			releaseLock();
 			stopListening();
